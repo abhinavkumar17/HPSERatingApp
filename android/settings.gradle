@@ -1,0 +1,3 @@
+rootProject.name = 'HPSERatingApp'
+
+include ':app'
