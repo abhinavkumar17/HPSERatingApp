@@ -2,14 +2,8 @@ echo "$PWD"
 
 echo "ABHINAV"
 
-if git checkout master &&
-    git fetch origin master &&
-    [ `git rev-list HEAD...origin/master --count` != 0 ] &&
-    git merge origin/master
-then
-    echo 'Updated!'
-else
-    echo 'Not updated.'
-fi
+[ $(git rev-parse HEAD) = $(git ls-remote $(git rev-parse --abbrev-ref @{u} | \
+sed 's/\// /g') | cut -f1) ] && echo up to date || echo not up to date
 
 
+git pull --dry-run | grep -q -v 'Already up-to-date.' && changed=1
