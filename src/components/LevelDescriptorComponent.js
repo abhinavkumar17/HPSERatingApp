@@ -100,6 +100,8 @@ export default class LevelDescriptorComponent extends Component {
   }
 }
 
+
+
   const rightButtonConfig = {
     title: 'Next',
     handler: () => alert('Go Next!'),
