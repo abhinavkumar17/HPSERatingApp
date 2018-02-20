@@ -117,6 +117,10 @@ export default class LevelDescriptorComponent extends Component {
     title: 'Organization',
   };
 
+  const titleConfig1= {
+    title: 'Organization',
+  };
+
   var styles = StyleSheet.create({
 
     mainContainer:{
