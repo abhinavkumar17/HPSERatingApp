@@ -1,5 +1,3 @@
-echo "$PWD"
-echo "ABHINAV"
 git fetch
 git remote update
 UPSTREAM=${1:-'@{u}'}
