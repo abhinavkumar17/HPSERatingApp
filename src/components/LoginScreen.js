@@ -41,5 +41,9 @@ onResetPassword1 = (email) => {
   console.log(email)
 }
 
+onResetPassword2 = (email) => {
+  console.log(email)
+}
+
 
 AppRegistry.registerComponent('LoginScreen', () => LoginScreen);
